@@ -1,19 +1,19 @@
 
 # 📊 ELK Stack Logging for Dockerized Microservices
 
-This project sets up the **ELK Stack (Elasticsearch, Logstash, Kibana)** to **centralize and visualize logs** from two microservices running in Docker containers: `user-service` and `order-service`.
+---
+
+> **Real-World Case Study:**
+> At a mid-sized logistics company managing multiple Dockerized microservices, engineers faced challenges in tracking logs scattered across containers. Diagnosing issues across services like `user-service` and `order-service` became time-consuming and error-prone. To solve this, the DevOps team implemented a centralized logging solution using the ELK Stack (Elasticsearch, Logstash, Kibana). Logs from each service were shipped into Logstash, enriched with metadata like `service_name`, `host`, and `level`, and indexed into Elasticsearch. Kibana dashboards were created to visualize trends, filter by severity, and trace errors by service—dramatically improving incident response and observability across the platform.
 
 ---
 
-## 📘 Real-World Scenario
+## 📘 Objective
 
-You are a DevOps engineer at a company that runs two microservices—**User Service** and **Order Service**—in Docker containers.  
 The company wants to:
 - 📦 Collect logs centrally,
 - 🪵 Filter logs by severity (`INFO`, `ERROR`),
 - 📈 Visualize logs using dashboards in **Kibana**.
-
-You will use the **ELK Stack** to achieve this.
 
 ---
 
